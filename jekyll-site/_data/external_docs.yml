@@ -1,0 +1,25 @@
+- name: Bike plan executive summary
+  date: 1997
+  description:
+  url: /pdf/1997BikePlanEXECSUMM.pdf
+  thumburl: /img/bike-plan-exec-summary-1997-thumb.jpg
+  kind: PDF
+
+- name: Logan Square Open Space Plan
+  url: http://www.cityofchicago.org/city/en/depts/dcd/supp_info/logan_square_openspaceplan.html
+  thumburl: /img/ls-open-space-plan-thumb.jpg
+
+- name: After School Matters Bloomingdale Trail Oral History 2008
+  date: 2008
+  url: /pdf/ASM_OralHistory_2008.pdf
+  thumburl: /img/ASM_OralHistory_2008-thumb.jpg
+  kind: PDF
+
+- name: After School Matters Bloomingdale Trail Oral History 2009
+  date: 2009
+  url: /pdf/ASM_OralHistory_2009.pdf
+  thumburl: /img/ASM_OralHistory_2009-thumb.jpg
+  kind: PDF
+
+- name: "Forgotten Chicago: The Bloomingdale Trail"
+  url: http://forgottenchicago.com/features/the-bloomingdale-line/

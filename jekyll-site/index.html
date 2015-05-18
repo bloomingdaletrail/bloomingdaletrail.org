@@ -1,0 +1,150 @@
+---
+layout: default
+---
+
+<div class="opening-soon row">
+    <a href="/opening-day/">
+        <div class="inner">
+                <div class="countdown"></div>
+                <h2><span class="hilite">The 606</span> &amp; the <span class="hilite">Bloomingdale Trail</span> are almost open!</h2>
+                <h3>Opening Weekend, <span class="hilite">June 6 &amp; 7, 2015</span>, in Chicago &raquo;</h3>
+            <div class="logo">
+                <img src="/img/bt-fbt-lg-white.png" height="200">
+            </div>
+        </div>
+    </a>
+</div>
+
+<script>
+function Countdown(until) {
+    this.until = until;
+    this._id = null;
+}
+
+Countdown.prototype.tick = function(cb) {
+    var _this = this;
+    var fn = function() {
+        var ms = _this.until - Date.now();
+        var days = Math.ceil(ms/1000/3600/24);
+        var hours = Math.floor((ms% (1000*3600*24)) / 1000 / 3600);
+        var mins = Math.floor((ms % (1000*3600)) / 1000/ 60);
+        var secs = Math.floor((ms % (1000*60)) / 1000);
+        cb(days, hours, mins, secs);
+    };
+    fn();
+    this._id = setInterval(fn, 1000);
+};
+
+var opening = new Date("Sat, 06 Jun 2015, 00:00:00 CDT");
+new Countdown(opening).tick(function(days, hours, mins, secs) {
+    var el = document.querySelector('.countdown');
+    if (days > 7) {
+        el.innerHTML = days + ' day' + (days === 1 ? '' : 's') + ' to go!';
+    } else {
+        el.innerHTML = days + ' day' + (days === 1 ? '' : 's') + ', ' + hours + ' hour' + (hours === 1 ? '' : 's') + ' to go!';
+    }
+});
+</script>
+
+<div class="row reframing-ruin-teaser">
+    <div class="col-lg-12">
+        <h2>
+            <span class="glyphicon glyphicon-picture"></span>
+            <a href="/reframing-ruin/">
+                Reframing Ruin: A Prelude to The Bloomingdale Trail
+                <span class="small">
+                    A photography exhibit &raquo;
+                </span>
+            </a>
+        </h2>
+    </div>
+</div>
+
+<div class="row faq">
+    <div class="col-lg-4">
+        <div class="wrap">
+            <h3>What is <b>The Bloomingdale Trail</b>?</h3>
+            <p>
+                The Bloomingdale Trail is the centerpiece of <a
+                href="http://the606.org/">The 606</a>. It is an elevated, multi-use
+                linear park being built (as of early 2015) on the unused Bloomingdale
+                railroad, running nearly 3 miles west-to-east through the northwest side
+                of Chicago.
+            </p>
+            <div class="photos">
+                <a href="/img/BT_Tour_09.jpg" title="The overgrown trail" rel="gallery-1" class="swipebox">
+                    <img src="/img/BT_Tour_09-thumb.jpg" alt="Photo of overgrown trail" class="img-thumbnail img-responsive">
+                </a>
+                <a href="/img/BT_Tour.jpg" title="Walking on the trail" rel="gallery-1" class="swipebox">
+                    <img src="/img/BT_Tour-thumb.jpg" alt="Photo of people walking on the trail" class="img-thumbnail img-responsive">
+                </a>
+                <a href="/img/aerial.jpg" title="Aerial photo of the trail and neighborhood" rel="gallery-1" class="swipebox">
+                    <img src="/img/aerial-thumb.jpg" alt="Aerial photo of the trail and surrounding neighborhood" class="img-thumbnail img-responsive">
+                </a>
+                <a href="/img/06.jpg" title="Atop the trail overlooking Churchill Park" rel="gallery-1" class="swipebox">
+                    <img src="/img/06-thumb.jpg" alt="Photo from atop the trail overlooking park" class="img-thumbnail img-responsive">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 what-is-the-606">
+        <div class="wrap">
+            <h3>What is <b>The 606</b>?</h3>
+            <p>
+                The 606 is the overarching project which will be a great new
+                system of parks, access points, and the elevated, multi-use trail and
+                park known as The Bloomingdale Trail.
+            </p>
+
+            <p>
+                The construction and project management of The 606 is being done
+                by FBT’s partner organization, The Trust for Public Land.
+            </p>
+
+            <p>
+                <strong>For more information about The 606 project, or to make a donation to The 606</strong>,
+                <a href="http://the606.org/">visit The 606 website here</a>.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="wrap">
+            <h3>Who are <b>Friends of the Bloomingdale Trail</b>?</h3>
+            <p>
+                Friends of the Bloomingdale Trail is non-profit organization, formed
+                in 2003, to advocate on behalf of the local community around the
+                Bloomingdale for the Trail project. FBT ... TK
+            </p>
+            <div class="photos swipebox">
+                <a href="/img/Trailcleanup01.jpg" rel="gallery-2" class="swipebox" title="Trail cleanup event">
+                    <img src="/img/Trailcleanup01-thumb.jpg" alt="Photo of trail cleanup" class="img-thumbnail img-responsive">
+                </a>
+                <a href="/img/BT_SundayParkway2.jpg" rel="gallery-2" class="swipebox" title="Bicycling under the Trail">
+                    <img src="/img/BT_SundayParkway2-thumb.jpg" alt="Photo of bicyclists under the Trail" class="img-thumbnail img-responsive">
+                </a>
+                <a href="/img/AlbanyWhipple_CAPS2.jpg" rel="gallery-2" class="swipebox" title="Friends at Julia de Burgos Park">
+                    <img src="/img/AlbanyWhipple_CAPS2-thumb.jpg" alt="Photo of friends at Albany-Whipple park" class="img-thumbnail img-responsive">
+                </a>
+                <a href="/img/BT2.jpg" rel="gallery-2" class="swipebox" title="Playing near the trail">
+                    <img src="/img/BT2-thumb.jpg" alt="Photo of kids playing near the trail" class="img-thumbnail img-responsive">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row map">
+    <div class="col-lg-9">
+        <img src="/img/melissa-map.png" class="img-responsive" alt="map of the Bloomingdale Trail">
+    </div>
+    <div class="col-lg-3">
+        <p>
+            The Bloomingdale Trail runs through 4 Chicago neighborhoods, from
+            <b>Logan Square</b> and <b>Humboldt Park</b> to the west, through <b>Bucktown</b> and
+            <b>Wicker Park</b> to the east.
+            It connects the <b>Boulevards</b> to the <b>Chicago River</b>.
+        </p>
+    </div>
+</div>

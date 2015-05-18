@@ -1,0 +1,24 @@
+---
+layout: page
+title: History of Friends of the Bloomingdale Trail
+---
+
+<div class="row history">
+    <div class="timeline">
+        {% assign years = site.data.history | group_by:"year" %}
+        {% for year in years %}
+        <div class="row moment">
+            <div class="col-md-1 date">
+                {{ year.name }}
+            </div>
+            <div class="col-md-11 description">
+                {% for moment in year.items %}
+                <p>
+                    {{ moment.description }}
+                </p>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

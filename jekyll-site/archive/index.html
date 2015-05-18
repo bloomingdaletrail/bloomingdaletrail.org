@@ -1,0 +1,57 @@
+---
+title: Document archive
+layout: page
+fixednav: false
+---
+
+<p>Over the years, Friends of the Bloomingdale Trail has produced many documents,
+working with the community, in different phases of the life of the Trail project
+&mdash; posters, flyers, maps, brochures, reports, etc. 
+</p>
+
+<div class="row toc">
+    <div class="col-md-8 col-md-offset-1">
+        <h4>Table of contents</h4>
+        <ul>
+            {% for doc in site.data.archive %}
+            <li>
+                <a href="#{{ doc.name | slugify }}">{{ doc.name }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div class="archive">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-1">
+            <h2>FBT Documents</h2>
+            <p class="legend">
+                &#x2606; &mdash; key document
+            </p>
+        </div>
+    </div>
+    {% for doc in site.data.archive %}
+        <div id="{{ doc.name | slugify }}" class="row doc{% if doc.important %} important{% endif %}">
+            <div class="col-md-2 col-md-offset-1">
+                <a href="{{ doc.url }}">
+                    <img class="img-thumbnail" alt="{{ doc.name }} thumbnail" src="{{ doc.thumburl }}" width="140">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <h3>
+                    <a href="{{ doc.url }}">
+                        {{ doc.name }}
+                    </a>
+                </h3>
+                <div class="meta">
+                    <p class="date">Date: {{ doc.date }}</p>
+                    <p class="kind">Type: {{ doc.kind }}</p>
+                </div>
+                <p class="description">
+                    {{ doc.description }}
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+</div>

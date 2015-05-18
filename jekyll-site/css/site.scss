@@ -1,0 +1,244 @@
+---
+---
+html, body {
+    background: #2a2e2e;
+}
+
+body {
+    font-family: "PT Serif", Georgia, "Times New Roman", serif;
+    font-size: 16px/1.5;
+    color: #333;
+}
+
+.jumbotron {
+    background-image: url(../img/JFisher1.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 40vh;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    -webkit-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,0.36);
+    -moz-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,0.36);
+    box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,0.36);
+    
+    .container {
+        margin-top: 12vh;
+
+        .card {
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.4);
+            margin-left: auto;
+            margin-right: auto;
+
+            h1 {
+                font-size: 48px;
+                margin-bottom: 3px;
+            }
+
+            h2 {
+                margin-top: 0;
+                margin-bottom: 1em;
+                font-style: italic;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@import "nav";
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.visuallyhidden {
+   border: 0;
+   clip: rect(0 0 0 0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   width: 1px;
+}
+
+#main {
+    background: #fff;
+
+    &.fixed-nav {
+        padding-top: 50px;
+    }
+}
+
+.opening-soon {
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 220px;
+    color: #ddd;
+
+    .hilite {
+        color: #ffffff;
+    }
+
+    .inner {
+        background-image: url(../img/chicago-bt-map.png);
+        background-position: 82% 56%;
+        background-repeat: no-repeat;
+        background-size: auto 200px;
+        padding-bottom: 40px;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .countdown {
+        padding-top: 1em;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    h2 {
+        margin-top: 10px;
+    }
+
+    h2, h3 {
+        letter-spacing: -1px;
+        text-align: center;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.faq {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+/**
+a[href^="http://"]:after,
+a[href^="https://"]:after {
+    content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
+}
+*/
+
+.wrap {
+    padding: 10px 20px;
+}
+
+.map {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.reframing-ruin-teaser {
+    background-image: url(../img/JFisher1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-color: #000;
+    color: #fff;
+    -webkit-box-shadow: inset 0px 0px 27px 18px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 0px 27px 18px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 0px 27px 18px rgba(0,0,0,0.5);
+    -webkit-transition: -webkit-box-shadow 0.5s;
+    -moz-transition: -moz-box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+
+    font-family: Montserrat, serif;
+
+    h2 {
+        background-color: rgba(0, 0, 0, 0.75);
+        font-size: 24px;
+        padding: 10px;
+        margin: 2em 10px;
+        display: inline-block;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            &:after {
+                content: "";
+            }
+        }
+    }
+
+    &:hover {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@import "footer";
+
+.history {
+    padding: 0px 50px;
+    margin-bottom: 2em;
+
+    h3 {
+        font-weight: bold;
+    }
+
+    .timeline {
+        .moment {
+            margin-bottom: 1em;
+
+            .date {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.archive {
+    .doc {
+        margin-bottom: 3em;
+        .meta {
+            opacity: 0.6;
+            font-size: smaller;
+            p {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            margin-bottom: 1em;
+        }
+        &.important h3 a:before {
+            content: " \2606";
+        }
+    }
+    .legend {
+        opacity: 0.6;
+        font-family: Arial, Verdana, sans-serif;
+        font-size: smaller;
+    }
+}
+
+.email-signup {
+    margin-bottom: 3em;
+}
+
+.page-content {
+    margin-bottom: 5em;
+}
+
+.in-memory-dan-drew {
+    float: right;
+    margin-left: 20px;
+}
+
+.what-is-the-606 {
+    background: url(../img/606-col-bg.png) no-repeat;
+    background-position: center center;
+}

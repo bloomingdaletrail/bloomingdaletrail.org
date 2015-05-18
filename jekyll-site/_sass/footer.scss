@@ -1,0 +1,25 @@
+footer {
+    border-top: 1px solid #2a2e2e;
+    background-image: url(../img/IMG_6055.jpg);
+    background-size: cover;
+    background-position: center 40%;
+    min-height: 600px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
+
+    h4 {
+        margin-top: 19em;
+        font-size: 20px;
+    }
+
+    .cc {
+        font-size: smaller;
+        a {
+            &:after { 
+                content: "";
+            }
+        }
+    }
+}
+

@@ -1,0 +1,9 @@
+.sass-cache
+/bin
+/pkg
+.DS_Store
+jekyll-site/_site
+vendor/ruby
+.bundle
+jekyll-site/pdf/FBT_CAF.pdf
+jekyll-site/pdf

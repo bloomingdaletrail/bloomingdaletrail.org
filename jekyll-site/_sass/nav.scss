@@ -1,0 +1,97 @@
+.navbar {
+    background: rgba(188,148,165,1);
+    background: -moz-linear-gradient(top, rgba(188,148,165,1) 0%, rgba(86,48,66,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(188,148,165,1)), color-stop(100%, rgba(86,48,66,1)));
+    background: -webkit-linear-gradient(top, rgba(188,148,165,1) 0%, rgba(86,48,66,1) 100%);
+    background: -o-linear-gradient(top, rgba(188,148,165,1) 0%, rgba(86,48,66,1) 100%);
+    background: -ms-linear-gradient(top, rgba(188,148,165,1) 0%, rgba(86,48,66,1) 100%);
+    background: linear-gradient(to bottom, rgba(188,148,165,1) 0%, rgba(86,48,66,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc94a5', endColorstr='#563042', GradientType=0 );
+    border: none;
+    margin-bottom: 0;
+
+    // .navbar-header {
+    //     .navbar-brand {
+    //         background-image: url(../img/bt-sm-white.png);
+    //         background-size: auto 20px;
+    //         background-repeat: no-repeat;
+    //         background-position: 0 11px;
+    //         padding-left: 23px;
+    //         color: #fff;
+    //     }
+    // }
+
+    .navbar-header {
+        .navbar-brand {
+            img {
+                margin-top: -2px;
+            }
+        }
+    }
+
+    .navbar-nav {
+        li {
+            a {
+                color: #fff;
+                transition: background-color 0.3s;
+                
+                &:hover {
+                    color: #fff;
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+            }
+        }
+
+        .dropdown.open {
+            a.dropdown-toggle {
+                background: #563042;
+                color: #fff;
+            }
+        }
+
+        .dropdown-menu {
+            li {
+                a {
+                    color: #563042;
+                }
+            }
+        }
+
+        .the606 {
+            background-image: url(../img/606-sm-white.png);
+            background-size: 30px 20px;
+            background-repeat: no-repeat;
+            background-position: 15px 13px;
+            
+            a {
+                width: 60px;
+            }
+        }
+
+        .sosh {
+            background-size: auto 20px;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            a {
+                width: 60px;
+            }
+        }
+
+        .twitter {
+            background-image: url(../img/g12.png);
+        }
+
+        .facebook {
+            background-image: url(../img/FB-f-Logo__white_50.png);
+        }
+
+        .flickr {
+            background-image: url(../img/flickr_logo_gn_styleguide_2x.png);
+
+            a {
+                width: 100px;
+            }
+        }
+    }
+}

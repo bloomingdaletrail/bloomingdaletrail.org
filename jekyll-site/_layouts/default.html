@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|Montserrat:400' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{site.description}}">
+    <link href="/img/favicon.png" rel="icon">
+    <title>{{site.title}}</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/swipebox.min.css" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-default{% if page.fixednav %} navbar-fixed-top{% endif %}">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a href="/" class="navbar-brand">{{site.title}}</a>-->
+                <a href="/" class="navbar-brand"><img src="/img/bt-sm-white.png" alt="FBT logo" height="20"></a>
+            </div>
+            <div id="main-navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="/about/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="/about/">About Friends</a>
+                            </li>
+                            <!--
+                            <li>
+                                <a href="/about/trail.html">The Trail</a>
+                            </li>
+                            -->
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="dropdown-header">History</li>
+                            <li>
+                                <a href="/history/">Friends history</a>
+                            </li>
+                            <li>
+                                <a href="/history/trail.html">History of the Trail</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/forms/d/13yT3NeEeKSsxeXXOFjPUYY3nItaTqM5pFL9RPFJd16E/viewform" target="_blank">
+                            Volunteer
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/email-signup.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            Sign up for email
+                        </a>
+                        <div role="menu" class="dropdown-menu" style="padding:17px">
+                            <form action="//bloomingdaletrail.us10.list-manage.com/subscribe/post?u=2a6639060e31c64325933fc06&amp;id=a5b4be8e5c" method="post" target="_blank" id="signupform" class="form" onsubmit="$('#signupform').dropdown('toggle')">
+                                <label>FBT mailing list</label>
+                                <input name="EMAIL" placeholder="Email address" required type="email" class="form-control" value="">
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;"><input type="text" name="b_2a6639060e31c64325933fc06_a5b4be8e5c" tabindex="-1" value=""></div>
+                                <br>
+                                <button type="submit" class="btn btn-default">Subscribe</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="the606">
+                        <a href="http://the606.org/" title="Go to The 606’s website" class="hide-text">The 606</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="facebook sosh">
+                        <a href="https://www.facebook.com/groups/TheBloomingdale/" class="hide-text">FBT on Facebook</a>
+                    </li>
+                    <li class="twitter sosh">
+                        <a href="https://twitter.com/thebloomingdale" class="hide-text">@thebloomingdale on Twitter</a>
+                    </li>
+                    <li class="flickr sosh">
+                        <a href="https://www.flickr.com/groups/bloomingdaletrail/" class="hide-text">FBT on Flickr</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container{% if page.fixednav %} fixed-nav{% endif %}" id="main">
+        {{content}}
+    </div>
+    <footer>
+        <div class="container">
+            <h4 class="slogan">Look Up! It’s The Bloomingdale Trail</h4>
+            <p class="copyright">Copyright &copy; 2015 <span class="fbt">Friends of the Bloomingdale Trail</fbt>. Some rights reserved.</p>
+            <p class="cc">
+                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Friends of the Bloomingdale Trail website</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+            </p>
+        </div>
+    </footer>
+    <script src="/js/jquery-1.11.2.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/lib/jquery.swipebox.min.js"></script>
+    <script>
+        $(function() {
+            $('.swipebox').swipebox({loopAtEnd: true});
+        });
+    </script>
+</body>
+</html>

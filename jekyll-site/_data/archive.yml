@@ -1,0 +1,169 @@
+- name: 2nd gen. FBT brochure
+  date: 2005
+  description:
+  url: /pdf/2nd_gen_FBT_brochure.pdf
+  thumburl: /img/fbt-brochure-2nd-gen-thumb.jpg
+  kind: PDF
+
+- name: Spring Cleaning & Picnic flyer
+  date: 2005
+  description:
+  url: /pdf/fbt-spring-cleaning-2005.pdf
+  thumburl: /img/fbt-spring-cleaning-2005-thumb.jpg
+  kind: PDF
+
+- name: Spring Cleaning & Picnic flyer, Spanish
+  date: 2005
+  description:
+  url: /pdf/fbt-spring-cleaning-2005-es.pdf
+  thumburl: /img/fbt-spring-cleaning-2005-es-thumb.jpg
+  kind: PDF
+
+- name: Bloomingdale Trail virtual tour slide deck
+  date: 2006
+  description: A presentation to the Chicago Architecture Foundation.
+  url: /pdf/FBT_CAF.pdf
+  thumburl: /img/FBT_CAF-thumb.jpg
+  kind: PDF
+
+- name: Coloring competition poster
+  description: >
+      FBT held a coloring competition with children ages 4 to 13, who were asked
+      to share their creative vision for the proposed Trail. Winners were
+      saluted by an official resolution from the Mayor and the Chicago City
+      Council.
+  date: 2006
+  url: /img/coloring-competition.jpg
+  thumburl: /img/coloring-competition-thumb.jpg
+  kind: Image
+
+
+- name: Coloring competition winners resolution
+  date: 2006
+  url: /pdf/fbt_coloring_competition_flores_resolution.pdf
+  kind: PDF
+  thumburl: /img/fbt_coloring_competition_flores_resolution-thumb.jpg
+
+- name: Walking tour map
+  date: 2006
+  kind: PDF
+  url: /pdf/TrailWalkMap.pdf
+  thumburl: /img/TrailWalkMap-thumb.jpg
+
+- name: Simple history of the Bloomingdale rail line, 1870-1935
+  date: 2006
+  kind: PDF
+  description: >
+      By Ted W. Pannkoke.
+  url: /pdf/Rough_Bloomingdale_Line_History.pdf
+  thumburl: /img/Rough_Bloomingdale_Line_History-thumb.jpg
+
+- name: Envisioning the Bloomingdale poster
+  date: 2007
+  description: >
+      For the May 2007 event: "The opening of Envisioning the Bloomingdale. This is an exhibit of
+      early visions for the elevated park we’re all hoping to see emerge on
+      the Bloomingdale line. This Friday is the kick-off reception, free and
+      open to the public. It’s from 6:30-8:30 p.m. at Acme Art Works, 1st
+      floor, on 1741 N Western Ave.
+
+      The exhibit is sponsored by the Bloomingdale Trail Collaborative, but it’s
+      primarily the work of the Chicago Architectural Club. They’ve put together
+      a terrific collection of conceptual pieces from architects and planners to
+      artists and kids. It’s going to be very cool. (Check out the great poster
+      they did for it.)"
+  url: /img/bloomingdale_poster_public-1.jpg
+  thumburl: /img/bloomingdale_poster_public-1-thumb.jpg
+  kind: Image
+
+- name: FBT brochure
+  important: true
+  date: 2007
+  url: /pdf/FBT_Brochure.pdf
+  thumburl: /img/FBT_Brochure-thumb.jpg
+  kind: PDF
+
+- name: FBT community visioning survey
+  date: 2007
+  url: /pdf/BT_Survey_2007-05-15.pdf
+  thumburl: /img/BT_Survey_2007-05-15-thumb.jpg
+  kind: PDF
+
+- name: FBT walking tour notes
+  date: 2007
+  url: /pdf/fbt_walking_tour_notes_2007.pdf
+  thumburl: /img/fbt_walking_tour_notes_2007-thumb.jpg
+  kind: PDF
+  description: >
+      Background material for docents.
+
+- name: Bloomingdale Trail mural project
+  date: 2007??
+  url: /pdf/BT_Mural_Project.pdf
+  thumburl: /img/BT_Mural_Project-thumb.jpg
+  kind: PDF
+
+- name: Community Visioning Update
+  important: true
+  description: >
+      Throughout 2007 and 2008, FBT led a series of visioning sessions with the
+      community, to hear, record, and summarize the ideas, concerns, and hopes
+      for the Trail project. This document is the final product of that work,
+      summarizing the findings. The findings would eventually inform the City's
+      official RFP for design and construction.
+  date: 2008
+  url: /pdf/bt_friendsofbtcommunityvisioningupdate.pdf
+  thumburl: /img/community-visioning-thumb.jpg
+  kind: PDF
+
+- name: Valentine’s event at Weegee’s Lounge
+  description:
+  date: 2008
+  url: /img/valentines.jpg
+  thumburl: /img/valentines-thumb.jpg
+  kind: Image
+
+- name: Walk, Bike, Run poster
+  description: >
+    About the June 20th 2009 event: “Join the Friends of the Bloomingdale Trail
+    for a day of exploration. Bike the corridor. Run beneath its viaducts.
+    Stroll along the mural-covered walls. Visit the new Albany-Whipple Park
+    with its sod sofa and future trail access. Finish up with family
+    friendly activities and a picnic back at Churchill Park. All ages are
+    welcome. $5 suggested donation for adults benefits FBT.”
+  date: 2009
+  url: /img/walk-bike-run-poster.jpg
+  thumburl: /img/walk-bike-run-thumb.jpg
+  kind: Image
+
+- name: Walk, Bike, Run flyer
+  date: 2009
+  url: /img/june20-event-flyer.png
+  thumburl: /img/june20-event-flyer-thumb.jpg
+  kind: Image
+
+- name: Walk, Bike, Run self-guided walking tour
+  date: 2009
+  url: /pdf/FBT_Self_Guided_Walking_Tour_FINAL.pdf
+  thumburl: /img/FBT_Self_Guided_Walking_Tour_FINAL-thumb.jpg
+  kind: PDF
+
+- name: FBT 2010 newsletter/postcard
+  description:
+  date: 2010
+  url: /pdf/BlmngDlTrl_PostCard_r5.pdf
+  thumburl: /img/fbt-postcard-thumb.jpg
+  kind: PDF
+
+- name: Chicago Public Art Group Albany-Whipple workshop flyer
+  description:
+  date: 2010
+  url: /pdf/CPAG_community_Visioning_Workshop_3-30-10.pdf
+  thumburl: /img/CPAG_community_Visioning_Workshop_3-30-10-thumb.jpg
+  kind: PDF
+
+- name: Bloomingdale Trail & The 606 charm bracelet
+  date: 2013
+  url: /img/BT_Charm_Bracelet_blue.jpg
+  thumburl: /img/BT_Charm_Bracelet_blue-thumb.jpg
+  kind: Image

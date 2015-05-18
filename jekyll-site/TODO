@@ -1,0 +1,16 @@
+- [ ] Add photos section
+- [ ] Add thumbnails to History
+- [ ] Add interactive map
+- [ ] Find place to host this, S3, GH Pages, peanut
+- [ ] Import old db dump (dl pg 8.x?)
+- [ ] Clean up collapsed menu
+
+- [x] Convert Reframing Ruin to Jekyll
+- [x] Add photos to "What is" and "Who are"
+- [x] Format pages - narrower column
+- [x] Group by years in History
+- [x] Fix submission on email sub
+- [x] Add _target=blank to Volunteer link
+- [x] Add JS for hamburger menu
+- [x] Reorganize history pages
+- [x] Link to document archive

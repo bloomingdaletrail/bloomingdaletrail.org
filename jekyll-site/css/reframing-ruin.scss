@@ -1,0 +1,221 @@
+---
+# Front matter block required for .scss -> .css conversion
+---
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Vollkorn", serif;
+    color: #4c4c4c;
+    line-height: 1.667;
+    background: #f2f3ef;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+$link-color: #32323a;
+
+a {
+    color: rgba(109, 135, 70, 1);
+
+    &:hover {
+        color: rgba(109, 135, 70, 1);
+    }
+}
+
+@import "nav";
+
+nav.navbar {
+    border-radius: 0;
+    .navbar-text {
+        a {
+            color: #fff;
+        }
+    }
+}
+
+figure {
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+
+    .action-overlay-wrap {
+        position: absolute;
+        bottom: 0;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .action-overlay {
+            padding: 10px 20px 10px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 20px transparent solid;
+            background-clip: padding-box;
+            transition: background-color .3s ease-out;
+
+            &:hover {
+                background-color: rgba(109, 135, 70, 1);
+            }
+
+            .glyphicon {
+                color: #fff;
+                float: left;
+                margin-top: 8px;
+                margin-right: 8px;
+            }
+
+            .meta {
+                margin-left: 22px;
+            }
+
+            h5 {
+                color: #fff;
+                font-size: 14px;
+                letter-spacing: 0;
+
+                .cta {
+                    margin-right: 8px;
+                }
+
+                .count {
+                    color: rgba(255, 255, 255, 0.6);
+                }   
+            }
+        }
+    }
+}
+
+.gallery-thumbnail {
+    .action-overlay {
+        .cta {
+            display: none;
+        }
+
+        &:hover {
+            .cta {
+                display: inline-block;
+            }
+            .count {
+                display: none;
+            }
+        }
+    }
+
+    figure {
+        height: 203px;
+        margin-bottom: 17px;
+    }
+}
+
+.masthead-and-hero {
+    margin-bottom: 31px;
+
+    figure {
+        height: 80vh;
+    }
+
+    .container {
+        position: relative;
+
+        h1 {
+            color: #f9f9f9;
+            background: rgba(0, 0, 0, 0.75);
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+
+    .masthead {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        margin-top: 20px;
+    }
+
+}
+
+.hero {
+    position: relative;
+
+    .back-to-root {
+        position: absolute;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.75);
+        display: inline-block;
+        padding: 10px;
+        a {
+            color: #f9f9f9;
+        }
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+    }
+}
+
+.gallery-head {
+    margin-bottom: 27px;
+
+    a {
+        text-decoration: none;
+        border-bottom: 1px transparent solid;
+
+        &:hover {
+            border-color: $link-color;
+        }
+
+        .gallery-title {
+            color: $link-color;
+        }
+    }
+}
+
+.gallery-title {
+    font-size: 42px;
+    text-align: center;
+}
+
+blockquote {
+    quotes: "\201C""\201D""\2018""\2019";
+    &:before {
+        content: open-quote;
+        color: #ccc;
+        font-size: 4em;
+        line-height: 0.1em;
+        vertical-align: -0.4em;
+        margin-right: 0.15em;
+    }
+    p {
+        display: inline;
+    }
+}
+
+@import "footer";
+
+footer {
+    border-top: none;
+    h4 {
+        font-family: "PT Serif", Georgia, "Times New Roman", serif;
+        letter-spacing: 0px;
+    }
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+    margin-top: 15em;
+    background-image: url(../img/IMG_6055_halftone.jpg);
+    -webkit-box-shadow: inset 0px 13px 37px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 13px 37px -16px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 13px 37px -16px rgba(0,0,0,0.75);
+}
+
+.justified-gallery>a>.caption, .justified-gallery>div>.caption {
+    font-family: "Vollkorn", serif;
+}
