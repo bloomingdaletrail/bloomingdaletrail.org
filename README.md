@@ -32,7 +32,8 @@ $ make serve
 
 And visit [http://127.0.0.1:4000/][lh] in your browser.
 
-[site]: https://bloomingdaletrail.org/
+[site]: http://bloomingdaletrail.org/
 [ruby]: https://www.ruby-lang.org/en/downloads/
 [go]: https://golang.org/dl/
 [lh]: http://127.0.0.1:4000/
+[jekyll]: http://jekyllrb.com/
