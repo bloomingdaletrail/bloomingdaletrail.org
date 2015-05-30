@@ -1,3 +1,12 @@
+/*
+- AccessPointFinder
+    - LocationForm
+    - NearbyAccessPoints
+        - AccessPoint
+            - DistanceInfo
+            - Directions
+*/
+
 // preload access point locations
 loadAccessPoints().then(accessPoints => {
     let startLoc = document.querySelector('[name="start"]');
@@ -41,26 +50,37 @@ loadAccessPoints().then(accessPoints => {
             })
             // display top 4
             let resultsDiv = document.getElementById('closest-results');
-            resultsDiv.innerHTML = '';
+            resultsDiv.innerHTML = `
+<div class="heading text-center">
+    Starting from: <span class="start-loc">${response.originAddresses[0]}</span>
+</div>
+`;
             let closest = accessPoints.slice(0, 4);
-            closest.forEach((ap, index) => {
+            for (let i = 0; i < closest.length; i++) {
+                let ap = closest[i];
                 let html = `
                     <p class=name><b>${ap.properties.TPL_NAME}</b></p>
                     <p class=address>${ap.address}</p>
                     <p class=distance>${ap.distance.text}</p>
                     <p class=duration>${ap.duration.text}</p>`;
-                if (index === 0) {
+                if (i === 0) {
                     html += '<div class="map"></div>';
                 }
                 let div = document.createElement('div');
                 // highlight/expand nearest
-                div.className = index === 0 ? 'access-pt highlighted' : 'access-pt';
+                div.className = i === 0 ? 'access-pt highlighted' : 'access-pt';
                 div.innerHTML = html;
+                if (i === 1) {
+                    let alsoNearby = document.createElement('div');
+                    alsoNearby.innerHTML = '<h4>Also nearby</h4>';
+                    alsoNearby.classList.add('text-center');
+                    alsoNearby.classList.add('also-nearby');
+                    resultsDiv.appendChild(alsoNearby);
+                }
                 resultsDiv.appendChild(div);
-            })
+            }
             resultsDiv.scrollIntoView();
             window.scrollBy(0, -125);
-            console.log(accessPoints);
             // query google directions api for nearest (allow user to set mode of transportation, default to driving)
             let directionsService = new google.maps.DirectionsService();
             let request = {
@@ -70,7 +90,6 @@ loadAccessPoints().then(accessPoints => {
             };
             directionsService.route(request, (result, status) => {
                 if (status === google.maps.DirectionsStatus.OK) {
-                    console.debug(result);
                     let display = new google.maps.DirectionsRenderer();
                     let coords = accessPoints[0].geometry.coordinates;
                     let [lng, lat] = coords;

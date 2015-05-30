@@ -36,11 +36,19 @@ layout: default
 .closest-access-pt {
     padding-top: 3em;
 }
+.closest-access-pt .heading {
+    padding: 10px;
+}
 .closest-access-pt h1 {
     margin-bottom: 1em;
 }
 .closest-access-pt form {
     margin-bottom: 2em;
+}
+#closest-results .also-nearby h4 {
+    font-style: italic;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
 }
 .highlighted {
     background-color: #efeff7;
@@ -57,6 +65,7 @@ layout: default
 .access-pt .name {
     font-size: 24px;
 }
+#closest-results .heading .start-loc,
 .access-pt .address {
     color: grey;
 }
@@ -71,7 +80,7 @@ layout: default
 }
 </style>
 
-<script src="https://fb.me/react-0.13.3.min.js"></script>
+<!--<script src="https://fb.me/react-0.13.3.min.js"></script>-->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAIVMKDMR7WcybZfsTYWqoTrws3LtqGjU"></script>
 <script src="/js/lib/browser-polyfill.js"></script>
 <script src="/js/closest.js"></script>
