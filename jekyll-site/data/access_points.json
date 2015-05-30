@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "NAME": "Ridgeway - Logan Square YMCA", "ACCESSTYPE": "Trailhead", "TPL_NAME": "Ridgeway Trailhead" }, "geometry": { "type": "Point", "coordinates": [ -87.720286040615861, 41.913639763940239 ] } },
+{ "type": "Feature", "properties": { "NAME": "Albany \/ Whipple", "ACCESSTYPE": "Access", "TPL_NAME": "Julia de Burgos Park" }, "geometry": { "type": "Point", "coordinates": [ -87.704552644976843, 41.913813518117855 ] } },
+{ "type": "Feature", "properties": { "NAME": "Milwaukee \/ Leavitt", "ACCESSTYPE": "Access", "TPL_NAME": "Park 567 Milwaukee \/ Leavitt" }, "geometry": { "type": "Point", "coordinates": [ -87.683365711936716, 41.913965071629988 ] } },
+{ "type": "Feature", "properties": { "NAME": "Damen - Churchill Park", "ACCESSTYPE": "Access", "TPL_NAME": "Churchill Field" }, "geometry": { "type": "Point", "coordinates": [ -87.67696614093542, 41.914094133802131 ] } },
+{ "type": "Feature", "properties": { "NAME": "Ashland - Walsh Park", "ACCESSTYPE": "Trailhead", "TPL_NAME": "Walsh Park" }, "geometry": { "type": "Point", "coordinates": [ -87.668090484125486, 41.914237720432652 ] } },
+{ "type": "Feature", "properties": { "NAME": "Drake Access Ramp", "ACCESSTYPE": "Access", "TPL_NAME": "Drake Access Ramp" }, "geometry": { "type": "Point", "coordinates": [ -87.71505, 41.913559999997432 ] } },
+{ "type": "Feature", "properties": { "NAME": "Humboldt Ramp", "ACCESSTYPE": "Access", "TPL_NAME": "Humboldt Access Ramp" }, "geometry": { "type": "Point", "coordinates": [ -87.70186673574652, 41.913816063130334 ] } },
+{ "type": "Feature", "properties": { "NAME": "Rockwell Ramp", "ACCESSTYPE": "Access", "TPL_NAME": "Rockwell Access Ramp" }, "geometry": { "type": "Point", "coordinates": [ -87.69217, 41.913949999997435 ] } },
+{ "type": "Feature", "properties": { "NAME": "Western Ramp", "ACCESSTYPE": "Access", "TPL_NAME": "Western Access Ramp" }, "geometry": { "type": "Point", "coordinates": [ -87.687263, 41.913915999997435 ] } },
+{ "type": "Feature", "properties": { "NAME": "California Ramp", "ACCESSTYPE": "Access", "TPL_NAME": "California Access Ramp" }, "geometry": { "type": "Point", "coordinates": [ -87.69706, 41.913899999997426 ] } },
+{ "type": "Feature", "properties": { "NAME": "Wood Ramp", "ACCESSTYPE": "Access", "TPL_NAME": "Wood Access Ramp" }, "geometry": { "type": "Point", "coordinates": [ -87.67266, 41.914209999997425 ] } },
+{ "type": "Feature", "properties": { "NAME": "Spaulding Access Ramp", "ACCESSTYPE": "Access", "TPL_NAME": "Spaulding Access Ramp" }, "geometry": { "type": "Point", "coordinates": [ -87.710153116268444, 41.913728462358442 ] } }
+]
+}

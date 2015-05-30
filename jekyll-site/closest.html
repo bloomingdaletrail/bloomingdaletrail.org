@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<div class="row closest-access-pt">
+    <div class="col-md-8 col-md-offset-2">
+        <h1 class="text-center">What’s my closest access point?</h1>
+
+        <form>
+            <div class="form-group">
+                <label>Starting location</label>
+                <input type=text class="form-control input-lg" name=start placeholder=Address required>
+                <a class="btn btn-default geolocate">
+                    Use my current location
+                    <img src="/img/spinner.gif" class="hide">
+                </a>
+            </div>
+            <div class="form-group">
+                <label>How do you want to get there?</label>
+                <select name=mode class="form-control input-lg">
+                    <option value=DRIVING>By driving</option>
+                    <option value=WALKING>By walking</option>
+                    <option value=BICYCLING>By bicycle</option>
+                    <option value=TRANSIT>By transit</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success btn-lg" type="submit">Find closest access point</button>
+            </div>
+        </form>
+        <div id="closest-results"></div>
+    </div>
+</div>
+
+<style>
+.closest-access-pt {
+    padding-top: 3em;
+}
+.closest-access-pt h1 {
+    margin-bottom: 1em;
+}
+.closest-access-pt form {
+    margin-bottom: 2em;
+}
+.highlighted {
+    background-color: #efeff7;
+}
+.highlighted .map {
+    width: 100%;
+    height: 300px;
+}
+.access-pt {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 2em;
+}
+.access-pt .name {
+    font-size: 24px;
+}
+.access-pt .address {
+    color: grey;
+}
+.access-pt .distance {
+    font-size: 16px;
+}
+.access-pt .duration {
+    font-style: italic;
+}
+.access-pt p {
+    margin-bottom: 0;
+}
+</style>
+
+<script src="https://fb.me/react-0.13.3.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAIVMKDMR7WcybZfsTYWqoTrws3LtqGjU"></script>
+<script src="/js/lib/browser-polyfill.js"></script>
+<script src="/js/closest.js"></script>

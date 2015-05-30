@@ -6,7 +6,7 @@ layout: default
     <a href="/opening-day/">
         <div class="inner">
                 <div class="countdown"></div>
-                <h2><span class="hilite">The 606</span> &amp; the <span class="hilite">Bloomingdale Trail</span> are almost open!</h2>
+                <h2><span class="hilite">The 606</span> &amp; The <span class="hilite">Bloomingdale Trail</span> are almost open!</h2>
                 <h3>Opening Weekend, <span class="hilite">June 6 &amp; 7, 2015</span>, in Chicago &raquo;</h3>
             <div class="logo">
                 <img src="/img/bt-fbt-lg-white.png" height="200">
@@ -35,10 +35,10 @@ Countdown.prototype.tick = function(cb) {
     this._id = setInterval(fn, 1000);
 };
 
-var opening = new Date("Sat, 06 Jun 2015, 00:00:00 CDT");
+var opening = new Date("Sat, 06 Jun 2015, 08:00:00 CDT");
 new Countdown(opening).tick(function(days, hours, mins, secs) {
     var el = document.querySelector('.countdown');
-    if (days > 7) {
+    if (days > 3) {
         el.innerHTML = days + ' day' + (days === 1 ? '' : 's') + ' to go!';
     } else {
         el.innerHTML = days + ' day' + (days === 1 ? '' : 's') + ', ' + hours + ' hour' + (hours === 1 ? '' : 's') + ' to go!';
@@ -113,7 +113,7 @@ new Countdown(opening).tick(function(days, hours, mins, secs) {
         <div class="wrap">
             <h3>Who are <b>Friends of the Bloomingdale Trail</b>?</h3>
             <p>
-                Friends of the Bloomingdale Trail is non-profit, all-volunteer organization, formed
+                Friends of the Bloomingdale Trail is all-volunteer organization, formed
                 in 2003, to advocate on behalf of the local community around the
                 Bloomingdale Trail project.
             </p>

@@ -11,4 +11,7 @@ serve: build
 	bundle exec jekyll serve -s jekyll-site -d jekyll-site/_site
 
 publish:
-	s3cmd -P sync jekyll-site/_site/ s3://friendsofthebloomingdaletrail/
+	aws --profile fbt s3 sync --acl public-read jekyll-site/_site/ s3://www.bloomingdaletrail.org/
+
+jekyll-site/js/closest.js: jekyll-site/js/closest.js.es6
+	babel $< > $@
