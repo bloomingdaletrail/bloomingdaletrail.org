@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-offset-2 col-md-8 map-container">
+        <!--<img src="/img/maptest@2x.png" width=750 height=2400 class=map>-->
+        <!--<img src="/img/fbt_vertical_map_v1.svg" width=750 height=2400 class=map>-->
+        <object type="image/svg+xml" data="/img/fbt_vertical_map_v1.svg" class=map>No SVG support</object>
+        <div class="popup"></div>
+        <!--
+<canvas width=750 height=2400></canvas>
+-->
+    </div>
+</div>
+
+<style>
+.map-container {
+    position: relative;
+}
+.popup {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 10px;
+}
+.popup .name {
+    font-weight: bold;
+    margin-bottom: none;
+}
+.map-container canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+</style>
+
+<!--
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="/js/lib/browser.js"></script>
+<script src="/js/map.js" type="text/ecmascript-6"></script>
+-->

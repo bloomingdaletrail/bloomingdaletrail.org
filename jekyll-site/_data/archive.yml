@@ -167,3 +167,10 @@
   url: /img/BT_Charm_Bracelet_blue.jpg
   thumburl: /img/BT_Charm_Bracelet_blue-thumb.jpg
   kind: Image
+
+- name: Chicago Park District Advisory Council letter
+  important: true
+  date: 2015
+  url: /pdf/BT_PAC_Letter_2015-06-01.pdf
+  thumburl: /img/BT_PAC_Letter_2015-06-01-thumb.png
+  kind: PDF

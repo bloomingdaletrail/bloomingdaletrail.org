@@ -5,8 +5,10 @@
 - name: Roger Guerrero
 
 - name: Ben Helphand
+  officer: President
 
 - name: Lynne Marrs
+  officer: Secretary
 
 - name: John Paige
 
@@ -15,7 +17,9 @@
 - name: Kati Rooney
 
 - name: Enrique Salgado Jr.
+  officer: Vice President
 
 - name: Jamie Simone
 
 - name: Paul Smith
+  officer: Treasurer
