@@ -8,6 +8,7 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://bloomingdaletrail.org" # the base hostname & protocol for your site
 twitter_username: thebloomingdale
+google_api_key: AIzaSyCAIVMKDMR7WcybZfsTYWqoTrws3LtqGjU
 
 # Build settings
 markdown: kramdown

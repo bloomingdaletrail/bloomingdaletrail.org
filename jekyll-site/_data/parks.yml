@@ -1,0 +1,35 @@
+- name: Milwaukee/Leavitt (Park No. 567)
+  lng: -87.68296349292001
+  lat: 41.914281156384355,
+  address: Milwaukee and Leavitt, Chicago, IL 60647
+  slug: milwaukee_leavitt_park_567
+
+- name: Churchill Field Park
+  lng: -87.67706263308725
+  lat: 41.91439292963199
+  address: 1825 N. Damen Ave, Chicago, IL 60614
+  slug: churchill_field_park
+
+- name: Ridgeway Trailhead
+  lng: -87.7201710963746
+  lat: 41.91364244835713
+  address: Ridgeway and Bloomingdale, Chicago, IL 60647
+  slug: ridgeway_trailhead
+
+- name: Walsh Park
+  lng: -87.66843664889535
+  lat: 41.913945835467
+  address: 1722 N. Ashland Ave., Chicago, IL 60614
+  slug: walsh_park
+
+- name: Julia de Burgos Park
+  lng: -87.70457136874398
+  lat: 41.913913900049664
+  address: 1805 N Albany Ave, Chicago, IL 60647
+  slug: julia_de_burgos_park
+
+- name: Kimball Park
+  lng: -87.711335
+  lat: 41.913938
+  address: Kimball & Bloomingdale, Chicago, IL 60647
+  slug: kimball_park
