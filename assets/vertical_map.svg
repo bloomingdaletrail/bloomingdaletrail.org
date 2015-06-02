@@ -43,7 +43,7 @@
          id="stop20964" /></linearGradient><linearGradient
        id="linearGradient20946"
        osb:paint="solid"
-       gradientTransform="matrix(0.17384646,-0.00424871,0.00150284,0.06149215,2747.5031,7875.6897)"><stop
+       gradientTransform="matrix(0.02551933,-6.2367934e-4,2.2060536e-4,0.00902657,502.00359,1436.3641)"><stop
          style="stop-color:#4e2a3c;stop-opacity:1;"
          offset="0"
          id="stop20948" /></linearGradient><linearGradient
@@ -397,14 +397,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1276"
-     inkscape:window-height="756"
+     inkscape:window-width="2556"
+     inkscape:window-height="1418"
      id="namedview4157"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="456.25"
-     inkscape:cy="279"
-     inkscape:window-x="0"
+     inkscape:zoom="0.55644444"
+     inkscape:cx="351.25"
+     inkscape:cy="1125"
+     inkscape:window-x="1280"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer3" /><g
@@ -9008,7 +9008,7 @@
                inkscape:connector-curvature="0"
                id="path8611"
                style="fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:none"
-               d="m 37.788597,9363.4555 1.042852,76.4978 -2.016256,0.028 -0.06406,-2.0155 31.873412,-1.013 2.080169,1.9789 1.529582,84.3641 -1.970929,2.0525 -80.2394779,1.7984 -0.045184,-2.0159 0.352354,1.9854 -0.028798,0.01 -0.557789,0.02 -1.74882,-0.1791 -0.881588,-0.3076 -1.581862,-1.0124 -0.571296,-0.5512 -1.190629,-1.7212 -0.276315,-0.5786 -0.641983,-2.1845 -0.08179,-0.5608 -0.567552,-146.9705 0.0086,-0.1944 0.0572,-0.6153 0.04547,-0.2774 0.651823,-2.7563 0.173683,-0.467 1.234703,-2.372 0.339446,-0.4711 1.712112,-1.7696 0.552262,-0.4039 2.022855,-1.0046 0.850054,-0.21 45.87458,-1.0667 2.063131,1.9884 z m -1.969382,2.0434 -45.87458,1.0667 -0.04687,-2.0159 0.896929,1.806 -2.022855,1.0046 -0.896929,-1.8059 1.449191,1.4021 -1.712111,1.7696 -1.449192,-1.4021 1.788638,0.931 -1.234704,2.3721 -1.788637,-0.9311 1.962321,0.4641 -0.651823,2.7563 -1.96232,-0.464 2.007785,0.1866 -0.0572,0.6153 -2.007785,-0.1867 2.016429,-0.01 0.567552,146.9704 -2.016429,0.01 1.934635,-0.5685 0.641983,2.1845 -1.934635,0.5686 1.65832,-1.1472 1.190629,1.7211 -1.65832,1.1472 1.087024,-1.6984 1.581862,1.0125 -1.087024,1.6984 0.205435,-2.006 1.7488198,0.1791 -0.2054358,2.006 -0.352344,-1.9855 0.0288,-0.01 0.30716,-0.031 80.239478,-1.7984 0.04518,2.0159 -2.016112,0.037 -1.529581,-84.3641 2.016112,-0.037 0.06406,2.0154 -31.873412,1.0131 -2.080313,-1.988 -1.042853,-76.4977 2.016256,-0.028 0.04687,2.0159 z" /></g><path
+               d="m 37.788597,9363.4555 1.042852,76.4978 -2.016256,0.028 -0.06406,-2.0155 31.873412,-1.013 2.080169,1.9789 1.529582,84.3641 -1.970929,2.0525 -80.2394779,1.7984 -0.045184,-2.0159 0.3523543,1.9854 -0.028798,0.01 -0.5577893,0.02 -1.74882,-0.1791 -0.881588,-0.3076 -1.581862,-1.0124 -0.571296,-0.5512 -1.190629,-1.7212 -0.276315,-0.5786 -0.641983,-2.1845 -0.08179,-0.5608 -0.567552,-146.9705 0.0086,-0.1944 0.0572,-0.6153 0.04547,-0.2774 0.651823,-2.7563 0.173683,-0.467 1.234703,-2.372 0.339446,-0.4711 1.712112,-1.7696 0.552262,-0.4039 2.022855,-1.0046 0.850054,-0.21 45.87458,-1.0667 2.063131,1.9884 z m -1.969382,2.0434 -45.87458,1.0667 -0.04687,-2.0159 0.896929,1.806 -2.022855,1.0046 -0.896929,-1.8059 1.449191,1.4021 -1.712111,1.7696 -1.449192,-1.4021 1.788638,0.931 -1.234704,2.3721 -1.788637,-0.9311 1.962321,0.4641 -0.651823,2.7563 -1.96232,-0.464 2.007785,0.1866 -0.0572,0.6153 -2.007785,-0.1867 2.016429,-0.01 0.567552,146.9704 -2.016429,0.01 1.934635,-0.5685 0.641983,2.1845 -1.934635,0.5686 1.65832,-1.1472 1.190629,1.7211 -1.65832,1.1472 1.087024,-1.6984 1.581862,1.0125 -1.087024,1.6984 0.205435,-2.006 1.7488198,0.1791 -0.2054358,2.006 -0.352344,-1.9855 0.0288,-0.01 0.30716,-0.031 80.239478,-1.7984 0.04518,2.0159 -2.016112,0.037 -1.529581,-84.3641 2.016112,-0.037 0.06406,2.0154 -31.873412,1.0131 -2.080313,-1.988 -1.042853,-76.4977 2.016256,-0.028 0.04687,2.0159 z" /></g><path
              inkscape:connector-curvature="0"
              id="path8613"
              style="fill:#dbdbdb;fill-opacity:1;fill-rule:evenodd;stroke:none"
@@ -11887,7 +11887,8 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="street labels"
-     style="display:inline"><text
+     style="display:inline"
+     sodipodi:insensitive="true"><text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:12.5px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#dbdbdb;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="478.7402"
@@ -12125,7 +12126,8 @@
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="CTA stations"
-     style="display:inline"><text
+     style="display:inline"
+     sodipodi:insensitive="true"><text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        x="560.77814"
@@ -12201,7 +12203,8 @@
      inkscape:groupmode="layer"
      id="layer7"
      inkscape:label="park labels"
-     style="display:inline"><text
+     style="display:inline"
+     sodipodi:insensitive="true"><text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="65"
@@ -12463,7 +12466,8 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="river label"
-     style="display:inline"><text
+     style="display:inline"
+     sodipodi:insensitive="true"><text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:11.64160061px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient22640);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="-939.86316"
@@ -12480,7 +12484,8 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="fbt logo"
-     style="display:inline"><g
+     style="display:inline"
+     sodipodi:insensitive="true"><g
        id="g13976-7"
        style="display:inline;fill:url(#linearGradient20946);fill-opacity:1"
        transform="matrix(0.125,0,0,-0.125,309.61797,186.2796)"><g
@@ -12620,7 +12625,8 @@
      inkscape:groupmode="layer"
      id="layer9"
      inkscape:label="arrow"
-     style="opacity:0.9"><g
+     style="opacity:0.9"
+     sodipodi:insensitive="true"><g
        id="g29349"
        transform="translate(24.649186,0)"><path
          sodipodi:nodetypes="cccc"
@@ -12649,7 +12655,8 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="ymca"
-     style="display:inline"><path
+     style="display:inline"
+     sodipodi:insensitive="true"><path
        style="fill:#dbdbdb;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 369.77387,248.5 46.97016,-0.75 0.25597,39 -48.25,1 z"
        id="path13520"
@@ -12877,7 +12884,7 @@
          y="1519.1693"
          x="380.8418"
          sodipodi:role="line"
-         id="tspan13759-8-3-1">PARK NO. 567</tspan></text>
+         id="tspan13759-8-3-1">PARK NO. 567 (MILWAUKEE AVE)</tspan></text>
 <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient20946);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -12889,7 +12896,7 @@
          id="tspan13533-4-9-5-6-9-0-5"
          x="380.8418"
          y="1519.1693"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient20946);fill-opacity:1;stroke:none;stroke-opacity:1">PARK NO. 567</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient20946);fill-opacity:1;stroke:none;stroke-opacity:1">PARK NO. 567 (MILWAUKEE AVE)</tspan></text>
 <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#c0d319;fill-opacity:1;stroke:#ffffff;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:3.9000001;stroke-dasharray:none;stroke-opacity:1"
@@ -12959,11 +12966,70 @@
          x="78.841797"
          y="2042.1693"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient20946);fill-opacity:1;stroke:none;stroke-opacity:1">WALSH PARK / EAST TRAILHEAD</tspan></text>
+<text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:9.5062418px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:url(#linearGradient20946);fill-opacity:1;stroke:#ffffff;stroke-width:1.62964141;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="238.73842"
+       y="288.81372"
+       id="text29361-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan29363-3"
+         x="238.73842"
+         y="288.81372"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1.62964141;stroke-linejoin:bevel">LAWNDALE AVE RAMP</tspan></text>
+<text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:9.5062418px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient20946);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="238.73842"
+       y="288.81372"
+       id="text29361"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan29363"
+         x="238.73842"
+         y="288.81372"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;writing-mode:lr-tb;text-anchor:start">LAWNDALE AVE RAMP</tspan></text>
+<rect
+       style="fill:url(#linearGradient20946);fill-opacity:1;stroke:#ffffff;stroke-width:0.49746406;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect29409"
+       width="5.4522829"
+       height="5.1005225"
+       x="351.88791"
+       y="283.75964" /></g><g
+     inkscape:groupmode="layer"
+     id="layer10"
+     inkscape:label="metra stations"
+     sodipodi:insensitive="true"><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="417.20676"
+       y="2058.678"
+       id="text29416-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan29418-7"
+         x="417.20676"
+         y="2058.678"
+         style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:11.25px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient23488);stroke:#ffffff;stroke-width:3;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">CLYBOURN METRA</tspan></text>
+<text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="417.20676"
+       y="2058.678"
+       id="text29416"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan29418"
+         x="417.20676"
+         y="2058.678"
+         style="font-style:italic;font-variant:normal;font-weight:500;font-stretch:normal;font-size:11.25px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura, Medium Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:url(#linearGradient23488)">CLYBOURN METRA</tspan></text>
 </g><g
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="title"
-     style="display:inline"><rect
+     style="display:inline"
+     sodipodi:insensitive="true"><rect
        style="fill:url(#linearGradient20946);fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linejoin:bevel;stroke-miterlimit:3.9000001;stroke-dasharray:none;stroke-opacity:1"
        id="rect20960"
        width="335"
