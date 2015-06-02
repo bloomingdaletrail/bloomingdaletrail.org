@@ -1,3 +1,9 @@
+- name: Mary Antonakos
+  pac: Churchill Field Park Advisory Council
+
+- name: Ananda Breslof
+  pac: Walsh Park Advisory Council
+
 - name: Romina Castillo
 
 - name: Dan Daly
@@ -9,6 +15,9 @@
 
 - name: Lynne Marrs
   officer: Secretary
+
+- name: Huu Nguyen
+  pac: Friends of Kimball Park
 
 - name: John Paige
 
@@ -23,3 +32,8 @@
 
 - name: Paul Smith
   officer: Treasurer
+
+- name: Max Temkin
+
+- name: Jason Walker
+  pac: Julia de Burgos Park Advisory Council

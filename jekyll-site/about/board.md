@@ -8,7 +8,15 @@ title: Friends of the Bloomingdale Trail Board of Directors
         <h2>Current board</h2>
         <ul>
         {% for member in site.data.board_members %}
-           <li>{{ member.name }}{% if member.officer %}, {{ member.officer }}{% endif %}</li>
+           <li>
+            {% if member.officer %}
+                {{ member.name }}, {{ member.officer }}
+            {% elsif member.pac %}
+                {{ member.name }}, {{ member.pac }}
+            {% else %}
+                {{ member.name }}
+            {% endif %}
+           </li>
         {% endfor %}
         </ul>
 
