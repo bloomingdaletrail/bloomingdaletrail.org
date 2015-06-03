@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic|Montserrat:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,16 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/swipebox.min.css" rel="stylesheet">
     <link href="/css/site.css" rel="stylesheet">
+    <script src="//cdn.ravenjs.com/1.1.15/jquery,native/raven.min.js"></script>
+    <script>
+        Raven.config('https://1b087017e03f45fda16d93e443cce69b@app.getsentry.com/45220', {
+            // pass along the version of your application
+            release: '1.0.0',
+            // we highly recommend restricting exceptions to a domain in order to filter out clutter
+            whitelistUrls: ['bloomingdaletrail.org, *.bloomingdaletrail.org']
+        }).install();
+    </script>
+</script>
 </head>
 <body>
     <nav class="navbar navbar-default{% if page.fixednav %} navbar-fixed-top{% endif %}">

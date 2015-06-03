@@ -5,29 +5,38 @@ layout: default
 <div class="row closest-access-pt">
     <div class="col-md-6 col-md-offset-3">
         <p class="text-center"><b>Friends of the Bloomingdale Trail</b></p>
-        <img src="/img/access_pt_header.jpg" class="img-responsive center-block">
+        <img src="/img/access_pt_header.jpg" class="img-responsive center-block" alt="photo of access ramp at Rockwell">
         <h2 class="text-center">What’s my closest access point?</h2>
+        <h4 class="text-center">The Bloomingdale Trail, heart of <a href="http://the606.org/">The 606</a></h4>
 
         <p>Put in your address, or click to use your current location if you’re out
         and about with your mobile device, and we’ll show you which access point to The
         Bloomingdale Trail / The 606 is closest to you and a map of how to get there!</p>
 
+        <p class="errors text-danger hide"></p>
+
         <form>
             <div class="form-group">
                 <label>Starting location</label>
-                <input type=text class="form-control input-lg" name=start placeholder=Address required>
-                <a class="btn btn-default geolocate">
-                    Use my current location
-                    <img src="/img/spinner.gif" class="hide">
-                </a>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <input type=text class="form-control" name=start placeholder=Address required>
+                    </div>
+                    <div class="col-sm-5">
+                        <button class="btn btn-default geolocate center-block">
+                            <i class="fa fa-location-arrow"></i> Use my current location
+                            <img src="/img/gps_spinner.gif" width=18 height=18 class="hide">
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="form-group">
                 <label>How do you want to get there?</label>
-                <select name=mode class="form-control input-lg">
-                    <option value=BICYCLING>By bicycle</option>
-                    <option value=WALKING>By walking</option>
-                    <option value=TRANSIT>By transit</option>
-                    <option value=DRIVING>By driving</option>
+                <select name=mode class="form-control">
+                    <option value="BICYCLING">By bicycle</option>
+                    <option value="WALKING">By walking</option>
+                    <option value="TRANSIT">By transit</option>
+                    <option value="DRIVING">By driving</option>
                 </select>
             </div>
             <div class="text-center">
@@ -67,6 +76,8 @@ layout: default
 .access-pt {
     text-align: center;
     padding: 10px;
+}
+#closest-results .banner {
     margin-bottom: 2em;
 }
 .access-pt .name {
@@ -90,4 +101,4 @@ layout: default
 <!--<script src="https://fb.me/react-0.13.3.min.js"></script>-->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAIVMKDMR7WcybZfsTYWqoTrws3LtqGjU"></script>
 <script src="/js/lib/browser-polyfill.js"></script>
-<script src="/js/closest.js"></script>
+<script src="/js/closest_access_point.js"></script>
