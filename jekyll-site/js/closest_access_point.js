@@ -302,8 +302,8 @@ var AccessPointFinder = React.createClass({
 			_this4.setState({
 				accessPoints: top,
 				lastStartLoc: response.originAddresses[0] });
-			// TODO(paul): resultsDiv.scrollIntoView();
-			// TODO(paul): window.scrollBy(0, -125);
+			React.findDOMNode(_this4.refs.nearbyList).scrollIntoView();
+			window.scrollBy(0, -125);
 			// query google directions api for nearest (allow user to set mode of transportation, default to driving)
 			var directionsService = new google.maps.DirectionsService();
 			var request = {
@@ -356,7 +356,7 @@ var AccessPointFinder = React.createClass({
 	},
 
 	render: function render() {
-		var nearbyAPs = this.state.accessPoints.length > 0 ? React.createElement(NearbyAccessPoints, {
+		var nearbyAPs = this.state.accessPoints.length > 0 ? React.createElement(NearbyAccessPoints, { ref: "nearbyList",
 			accessPoints: this.state.accessPoints,
 			startLoc: this.state.startLoc,
 			lastStartLoc: this.state.lastStartLoc }) : null;
