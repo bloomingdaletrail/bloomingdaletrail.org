@@ -1,8 +1,14 @@
 ---
 layout: default
+title: Find your nearest access point to The Bloomingdale Trail / The 606
+description: >
+    Don’t know which access point to The Bloomingdale Trail / The 606 is
+    closest to you? Plug in your address or use your current location and let FBT’s
+    access point locator tell you how to get there.
+image: /img/access_pt_locator_screenshot.png
 ---
 
-<div class="row closest-access-pt">
+<div class="row closest-access-point">
     <div class="col-md-6 col-md-offset-3">
         <p class="text-center"><b>Friends of the Bloomingdale Trail</b></p>
         <img src="/img/access_pt_header.jpg" class="img-responsive center-block" alt="photo of access ramp at Rockwell">
@@ -15,90 +21,60 @@ layout: default
 
         <p class="errors text-danger hide"></p>
 
-        <form>
-            <div class="form-group">
-                <label>Starting location</label>
-                <div class="row">
-                    <div class="col-sm-7">
-                        <input type=text class="form-control" name=start placeholder=Address required>
-                    </div>
-                    <div class="col-sm-5">
-                        <button class="btn btn-default geolocate center-block">
-                            <i class="fa fa-location-arrow"></i> Use my current location
-                            <img src="/img/gps_spinner.gif" width=18 height=18 class="hide">
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label>How do you want to get there?</label>
-                <select name=mode class="form-control">
-                    <option value="BICYCLING">By bicycle</option>
-                    <option value="WALKING">By walking</option>
-                    <option value="TRANSIT">By transit</option>
-                    <option value="DRIVING">By driving</option>
-                </select>
-            </div>
-            <div class="text-center">
-                <button class="btn btn-success btn-lg" type="submit">Find closest access point</button>
-            </div>
-        </form>
-        <div id="closest-results"></div>
+        <!-- AccessPointFinder -->
+        <div id="access_point_finder"></div>
     </div>
 </div>
 
 <style>
-.closest-access-pt {
+.closest-access-point {
     padding-top: 3em;
     margin-bottom: 3em;
 }
-.closest-access-pt .heading {
-    padding: 10px;
-}
-.closest-access-pt h1 {
+.closest-access-point h4 {
     margin-bottom: 1em;
 }
-.closest-access-pt form {
+.closest-access-point form {
     margin-bottom: 2em;
 }
-#closest-results .also-nearby h4 {
+.also-nearby h4 {
     font-style: italic;
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
 }
-.highlighted {
+.focused {
     background-color: #efeff7;
 }
-.highlighted .map {
+.focused .map {
     width: 100%;
     height: 300px;
 }
-.access-pt {
+.access-point {
     text-align: center;
     padding: 10px;
 }
-#closest-results .banner {
+.banner {
     margin-bottom: 2em;
 }
-.access-pt .name {
+.access-point .name {
     font-size: 24px;
 }
-#closest-results .heading .start-loc,
-.access-pt .address {
+.start-loc,
+.access-point .address {
     color: grey;
 }
-.access-pt .distance {
+.access-point .distance {
     font-size: 16px;
 }
-.access-pt .duration {
+.access-point .duration {
     font-style: italic;
 }
-.access-pt p {
+.access-point p {
     margin-bottom: 0;
 }
 </style>
 
-<!--<script src="https://fb.me/react-0.13.3.min.js"></script>-->
+<script src="https://fb.me/react-0.13.3.min.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAIVMKDMR7WcybZfsTYWqoTrws3LtqGjU"></script>
 <script src="/js/lib/browser-polyfill.js"></script>
 <script src="/js/closest_access_point.js"></script>
