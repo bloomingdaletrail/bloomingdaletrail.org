@@ -23,3 +23,13 @@ defaults:
             type: "pages"
         values:
             fixednav: true
+
+exclude:
+    - vendor
+    - Makefile
+    - Gemfile
+    - Gemfile.lock
+    - README.md
+    - TODO
+    - cf-invalidate.json
+    - pdf

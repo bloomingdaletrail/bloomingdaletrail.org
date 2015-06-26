@@ -5,10 +5,10 @@ all: build
 .PHONY: build serve publish
 
 build:
-	bundle exec jekyll build -s jekyll-site -d jekyll-site/_site
+	bundle exec jekyll build
 
 serve server s:
-	bundle exec jekyll serve -s jekyll-site -d jekyll-site/_site
+	bundle exec jekyll serve
 
 publish:
 	aws --profile fbt s3 sync --acl public-read --exclude \*.pdf jekyll-site/_site/ s3://www.bloomingdaletrail.org/
