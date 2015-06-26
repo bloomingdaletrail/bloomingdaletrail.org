@@ -13,6 +13,9 @@ google_api_key: AIzaSyCAIVMKDMR7WcybZfsTYWqoTrws3LtqGjU
 # Build settings
 markdown: kramdown
 
+# Gallery (ReFraming Ruin) settings
+gallery_data_name: reframing_ruin
+
 defaults:
     -
         scope:

@@ -1,0 +1,77 @@
+---
+layout: gallery_base
+---
+{% comment %}
+
+{{define "title"}}{{.SiteName}} · {{.Title}} · {{.Name}}{{end}}
+{{define "bodyClass"}}gallery{{end}}
+{{define "content"}}
+        {{$featuredPhotoIdx := .FeaturedPhoto}}
+        {{$featuredPhoto := index .Photos $featuredPhotoIdx}}
+        <div class="hero container">
+            <div class="back-to-root">
+                <a href="../"><i class="fa fa-hand-o-left"></i> Back to {{.Title}} home</a>
+            </div>
+            <figure style="text-align: center">
+                <div class="vignette">
+                    <img src="{{.ImagePathPrefix}}/{{$featuredPhoto.Filename}}" style="max-width: 1170px; max-height: 600px">
+                </div>
+                <div class="action-overlay-wrap">
+                    <a href="#">
+                        <div class="action-overlay">
+                            <span class="glyphicon glyphicon-picture"></span>
+                            <div class="meta">
+                                <h5>
+                                    <span class="cta">View Slide Show</span>
+                                    <span class="count">
+                                        {{len .Photos}} Photographs
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--
+                <figcaption>
+                    {{$featuredPhoto.Caption}}
+                </figcaption>
+                -->
+            </figure>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="gallery-head">
+                    <a href="#">
+                        <h3 class="gallery-title">
+                            {{.Name}}
+                        </h3>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 share">
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="thebloomingdale" data-related="thebloomingdale" data-count="none" data-hashtags="bloomingdaletrail">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                            <li><div class="fb-share-button" data-layout="button"></div>
+                        </ul>
+                    </div>
+                    <div class="col-md-10 gallery-description">
+                        <blockquote>
+                            {{markdown .Description}}
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            {{$imgPathPrefix := .ImagePathPrefix}}
+            {{$name := .Name}}
+            <div class="row gallery gallery-detail">
+                {{range $index, $photo := .Photos}}
+                    <a href="{{$imgPathPrefix}}/{{$photo.Filename}}" title="{{$photo.Caption}} · {{$name}}">
+                        <img alt="{{$photo.Caption}} · {{$name}}" src="{{$imgPathPrefix}}/{{thumbnail $photo.Filename}}">
+                    </a>
+                {{end}}
+            </div>
+        </div>
+{{end}}
+
+{% endcomment %}
