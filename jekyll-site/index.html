@@ -3,48 +3,22 @@ layout: default
 ---
 
 <div class="opening-soon row">
-    <a href="/opening-day/">
-        <div class="inner">
-                <div class="countdown"></div>
-                <h2><span class="hilite">The 606</span> &amp; The <span class="hilite">Bloomingdale Trail</span> are almost open!</h2>
-                <h3>Opening Weekend, <span class="hilite">June 6 &amp; 7, 2015</span>, in Chicago &raquo;</h3>
-            <div class="logo">
-                <img src="/img/bt-fbt-lg-white.png" height="200">
-            </div>
+    <div class="inner">
+        <h2>The Bloomingdale Trail, the heart of The 606, is finally open!</h2>
+        <div class="logo text-center">
+            <img src="/img/bt-fbt-lg-white.png" height="200">
         </div>
-    </a>
+    </div>
 </div>
 
-<script>
-function Countdown(until) {
-    this.until = until;
-    this._id = null;
-}
-
-Countdown.prototype.tick = function(cb) {
-    var _this = this;
-    var fn = function() {
-        var ms = _this.until - Date.now();
-        var days = Math.ceil(ms/1000/3600/24);
-        var hours = Math.floor((ms% (1000*3600*24)) / 1000 / 3600);
-        var mins = Math.floor((ms % (1000*3600)) / 1000/ 60);
-        var secs = Math.floor((ms % (1000*60)) / 1000);
-        cb(days, hours, mins, secs);
-    };
-    fn();
-    this._id = setInterval(fn, 1000);
-};
-
-var opening = new Date("Sat, 06 Jun 2015, 08:00:00 CDT");
-new Countdown(opening).tick(function(days, hours, mins, secs) {
-    var el = document.querySelector('.countdown');
-    if (days > 3) {
-        el.innerHTML = days + ' day' + (days === 1 ? '' : 's') + ' to go!';
-    } else {
-        el.innerHTML = days + ' day' + (days === 1 ? '' : 's') + ', ' + hours + ' hour' + (hours === 1 ? '' : 's') + ' to go!';
-    }
-});
-</script>
+<div class="row access-locator-teaser text-center">
+    <a href="/access_points/nearby.html">
+        <h2>
+            Wanna get up there? Find your access point
+            <i class="fa fa-location-arrow"></i>
+        </h2>
+    </a>
+</div>
 
 <div class="row reframing-ruin-teaser">
     <div class="col-lg-12">

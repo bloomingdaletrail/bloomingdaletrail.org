@@ -2,11 +2,11 @@
 title: Friends of the Bloomingdale Trail
 email: paul@bloomingdaletrail.org
 description: >
-    Friends of the Bloomingdale Trail is a not-for-profit organization
-    advocating on behalf of the community for Chicago’s next great park, the 606
-    and the Bloomingdale Trail, a 2-3/4 mile elevated multi-use park.
+    Friends of the Bloomingdale Trail is a not-for-profit all-volunteer
+    grassroots organization advocating and organizing for Chicago’s next great park, The 606
+    and The Bloomingdale Trail, a 2-3/4 mile elevated multi-use park.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://bloomingdaletrail.org" # the base hostname & protocol for your site
+url: "http://bloomingdaletrail.org" # the base hostname & protocol for your site
 twitter_username: thebloomingdale
 google_api_key: AIzaSyCAIVMKDMR7WcybZfsTYWqoTrws3LtqGjU
 

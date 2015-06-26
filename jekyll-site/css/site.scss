@@ -77,43 +77,26 @@ body {
 }
 
 .opening-soon {
-    background-image: url(../img/hero.jpg);
+    background-image: url(../img/P1100728.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     min-height: 220px;
-    color: #ddd;
+    color: #fff;
+    padding: 40px 10px;
 
-    .hilite {
-        color: #ffffff;
-    }
-
-    .inner {
-        background-image: url(../img/chicago-bt-map.png);
-        background-position: 82% 56%;
-        background-repeat: no-repeat;
-        background-size: auto 200px;
-        padding-bottom: 40px;
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .countdown {
-        padding-top: 1em;
-        text-align: center;
-        font-size: 36px;
-    }
-
-    h2 {
-        margin-top: 10px;
-    }
+//    .inner {
+//        background-image: url(../img/chicago-bt-map.png);
+//        background-position: 82% 56%;
+//        background-repeat: no-repeat;
+//        background-size: auto 200px;
+//        padding-bottom: 40px;
+//        background-color: rgba(0, 0, 0, 0.4);
+//    }
 
     h2, h3 {
         letter-spacing: -1px;
         text-align: center;
-        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
-    }
-
-    .logo {
-        text-align: center;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
     }
 
     a {
@@ -178,6 +161,22 @@ a[href^="https://"]:after {
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
+    }
+}
+
+.access-locator-teaser {
+    background-image: url(../img/access_locator_teaser.gif);
+    background-size: contain;
+    a {
+        color: #fff;
+        text-decoration: none;
+        height: 100%;
+    }
+    h2 {
+        font-size: 22px;
+        margin: 2em 1em;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
     }
 }
 

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{site.description}}">
     <link href="/img/favicon.png" rel="icon">
-    <title>{{site.title}}</title>
+    <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/swipebox.min.css" rel="stylesheet">
     <link href="/css/site.css" rel="stylesheet">
