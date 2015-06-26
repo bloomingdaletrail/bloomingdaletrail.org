@@ -1,0 +1,76 @@
+---
+---
+{% include gallery_header.html body_class="index" %}
+ 
+<div class="masthead-and-hero">
+    <div class="container">
+        <div class="masthead">
+            <h1>{{page.galleries.title}}: {{.page.galleries.subtitle}}</h1>
+        </div>
+    </div>
+    {% assign featured_gallery = page.galleries.galleries[page.galleries.featured_gallery] %}
+    {% assign featured = featured_gallery.photos[featured_gallery.featured_photo] %}
+    <figure style="background-image: url({{page.galleries.img_path_prefix}}/{{featured.filename}}">
+        <div class="action-overlay-wrap">
+            <a href="./{{featured_gallery.slug}}/#lightbox">
+                <div class="action-overlay">
+                    <span class="glyphicon glyphicon-picture"></span>
+                    <div class="meta">
+                        <h5>
+                            <span class="cta">View Slide Show</span>
+                            <span class="count">
+                                {{featured_gallery.photos | size}} Photographs
+                            </span>
+                        </h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--
+        <figcaption>
+            {{$featuredPhoto.Caption}}
+        </figcaption>
+        -->
+    </figure>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="featured-gallery">
+                <div class="gallery-head">
+                    <a href="./{{featured_gallery.slug}}/">
+                        <h3 class="gallery-title">
+                            Featured gallery: {{featured_gallery.name}}
+                        </h3>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 share">
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="thebloomingdale" data-related="thebloomingdale" data-count="none" data-hashtags="bloomingdaletrail">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                            <li><div class="fb-share-button" data-layout="button"></div>
+                        </ul>
+                    </div>
+                    <div class="col-md-10 gallery-description">
+                        <blockquote>
+                            {{featured_gallery.description | markdownify}}
+                        </blockquote>
+                        <p><a href="./{{featured_gallery.slug}}/">See more &rsaquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% assign img_path_prefix = page.galleries.img_path_prefix %}
+    <div class="row gallery gallery-index">
+        {% for gallery in page.galleries.galleries %}
+            <a href="./{{gallery.slug}}/">
+                {% assign photo = gallery.photos[gallery.featured_photo] %}
+                <img alt="{{gallery.name}}" src="{{img_path_prefix}}/{{photo.filename|thumbnail}}">
+            </a>
+        {% endfor %}
+    </div>
+</div>
+
+{% include gallery_footer.html %}

@@ -4,6 +4,7 @@
     "subtitle": "a Prelude to the Bloomingdale Trail",
     "featured_gallery": 16,
     "img_path_prefix": "/img/reframing-ruin",
+    "root_dir": "reframing-ruin",
     "galleries": [
         {
             "name": "Philip Bussey",
