@@ -1,6 +1,4 @@
 .sass-cache
-/bin
-/pkg
 .DS_Store
 jekyll-site/_site
 vendor/ruby
