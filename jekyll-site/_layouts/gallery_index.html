@@ -1,9 +1,6 @@
 ---
-layout: gallery_base
 ---
-        {{$featuredGalleryIdx := .FeaturedGallery}}
-        {{$featuredGallery := index .Galleries $featuredGalleryIdx}}
-        {{$featuredPhoto := index $featuredGallery.Photos $featuredGallery.FeaturedPhoto}}
+{% include gallery_header.html body_class="index" %}
  
 <div class="masthead-and-hero">
     <div class="container">
@@ -75,81 +72,5 @@ layout: gallery_base
         {% endfor %}
     </div>
 </div>
-{% comment %}
-{{define "title"}}{{.SiteName}} · {{.Title}}{{end}}
-{{define "bodyClass"}}index{{end}}
-{{define "content"}}
-        {{$featuredGalleryIdx := .FeaturedGallery}}
-        {{$featuredGallery := index .Galleries $featuredGalleryIdx}}
-        {{$featuredPhoto := index $featuredGallery.Photos $featuredGallery.FeaturedPhoto}}
-        <div class="masthead-and-hero">
-            <div class="container">
-                <div class="masthead">
-                    <h1>{{.Title}}: {{.Subtitle}}</h1>
-                </div>
-            </div>
-            <figure style="background-image: url({{.ImagePathPrefix}}/{{$featuredPhoto.Filename}})">
-                <div class="action-overlay-wrap">
-                    <a href="./{{$featuredGallery.Slug}}/#lightbox">
-                        <div class="action-overlay">
-                            <span class="glyphicon glyphicon-picture"></span>
-                            <div class="meta">
-                                <h5>
-                                    <span class="cta">View Slide Show</span>
-                                    <span class="count">
-                                        {{len $featuredGallery.Photos}} Photographs
-                                    </span>
-                                </h5>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!--
-                <figcaption>
-                    {{$featuredPhoto.Caption}}
-                </figcaption>
-                -->
-            </figure>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="featured-gallery">
-                        <div class="gallery-head">
-                            <a href="./{{$featuredGallery.Slug}}/">
-                                <h3 class="gallery-title">
-                                    Featured gallery: {{$featuredGallery.Name}}
-                                </h3>
-                            </a>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2 share">
-                                <ul class="list-unstyled">
-                                    <li><a href="https://twitter.com/share" class="twitter-share-button" data-via="thebloomingdale" data-related="thebloomingdale" data-count="none" data-hashtags="bloomingdaletrail">Tweet</a>
-                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                                    <li><div class="fb-share-button" data-layout="button"></div>
-                                </ul>
-                            </div>
-                            <div class="col-md-10 gallery-description">
-                                <blockquote>
-                                    {{markdown $featuredGallery.Description}}
-                                </blockquote>
-                                <p><a href="./{{$featuredGallery.Slug}}/">See more &rsaquo;</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {{$imgPathPrefix := .ImagePathPrefix}}
-            <div class="row gallery gallery-index">
-                {{range $index, $gallery := .Galleries}}
-                    <a href="./{{$gallery.Slug}}/">
-                        {{with index $gallery.Photos $gallery.FeaturedPhoto}}
-                        <img alt="{{$gallery.Name}}" src="{{$imgPathPrefix}}/{{thumbnail .Filename}}">
-                        {{end}}
-                    </a>
-                {{end}}
-            </div>
-        </div>
-{{end}}
-{% endcomment %}
+
+{% include gallery_footer.html %}

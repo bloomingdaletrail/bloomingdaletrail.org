@@ -8,6 +8,7 @@ module Jekyll
             self.process(@name)
             self.read_yaml(File.join(base, '_layouts'), 'gallery_page.html')
             self.data['gallery'] = gallery
+            self.data['galleries'] = galleries
         end
     end
 
@@ -20,7 +21,7 @@ module Jekyll
                 gallery_data = site.data[data]
                 gallery_data['galleries'].each do |gallery|
                     dir = File.join(gallery_data['root_dir'], gallery['slug'])
-                    site.pages << GalleryPage.new(site, site.source, dir, gallery, galleries)
+                    site.pages << GalleryPage.new(site, site.source, dir, gallery, gallery_data)
                 end
             end
         end
@@ -50,4 +51,13 @@ module Jekyll
             end
         end
     end
+
+    module GalleryFilters
+        def thumbnail(filename)
+			idx = filename.index('.jpg')
+            return filename[0...idx] + '_tn.jpg'
+        end
+    end
 end
+
+Liquid::Template.register_filter(Jekyll::GalleryFilters)
