@@ -9,6 +9,11 @@
   lat: 41.91439292963199
   address: 1825 N. Damen Ave, Chicago, IL 60614
   slug: churchill_field_park
+  advisory_council:
+    contact: Mary Antonakos, President
+    phone: (773) 278-744
+    email: mantonak@yahoo.com
+    meeting_date_time: Last Wednesday of the month, 7 p.m. at Café D
 
 - name: Ridgeway Trailhead
   lng: -87.7201710963746
@@ -21,12 +26,21 @@
   lat: 41.913945835467
   address: 1722 N. Ashland Ave., Chicago, IL 60614
   slug: walsh_park
+  advisory_council:
+    contact: Ananda Breslof, President
+    phone: (312) 742-7769
+    email: AnandaBosch@sbcglobal.net
+    meeting_date_time: Quarterly
 
 - name: Julia de Burgos Park
   lng: -87.70457136874398
   lat: 41.913913900049664
   address: 1805 N Albany Ave, Chicago, IL 60647
   slug: julia_de_burgos_park
+  advisory_council:
+    contact: David Altenburg, President
+    phone: (773) 209-5025
+    email: david@gensym.org
 
 - name: Kimball Park
   lng: -87.711335

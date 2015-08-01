@@ -2,7 +2,34 @@
 layout: default
 ---
 
-<h2>{{ page.park.name }}</h2>
+<h2>The 606 parks / access points to The Bloomingdale Trail</h2>
+
+<p><b><a href="../">List of all The 606 parks</a></b></p>
+
+<h1>{{ page.park.name }}</h1>
+
+<dl>
+    <dt>Address</dt>
+    <dd>{{ page.park.address }}</dd>
+</dl>
+
+{% if page.park.advisory_council %}
+{% assign pac = page.park.advisory_council %}
+<h4>Park advisory council</h4>
+<dl>
+    <dt>Contact</dt>
+    <dd>{{ pac.contact }}</dd>
+    <dt>Phone</dt>
+    <dd>{{ pac.phone }}</dd>
+    <dt>Email</dt>
+    <dd><a href="mailto:{{ pac.email }}">{{ page.park.advisory_council.email }}</a></dd>
+    {% if pac.meeting_date_time %}
+    <dt>Periodic public meeting date/time</dt>
+    <dd>{{ pac.meeting_date_time }}</dd>
+    {% endif %}
+</dl>
+{% endif %}
+
 <iframe
     width=600
     height=450

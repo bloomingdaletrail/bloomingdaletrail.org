@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<h1>The 606 parks / access points to The Bloomingdale Trail</h1>
+
+<ul>
+{% for park in page.parks %}
+    <li>
+        <a href="./{{ park.slug }}">{{ park.name }}</a>
+    </li>
+{% endfor %}
+</ul>

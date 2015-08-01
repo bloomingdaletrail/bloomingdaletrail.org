@@ -26,4 +26,27 @@ module Jekyll
         end
     end
 
+    class ParksIndexPage < Page
+        def initialize(site, base, dir, name, parks)
+            @site = site
+            @base = base
+            @dir = dir
+            @name = name
+
+            self.process(@name)
+            self.read_yaml(File.join(base, '_layouts'), 'parks_index.html')
+            self.data['parks'] = parks
+        end
+    end
+
+    class ParksIndexPageGenerator < Generator
+        safe true
+
+        def generate(site)
+            if site.layouts.key? 'parks_index'
+                dir = site.config['park_dir'] || 'parks'
+                site.pages << ParksIndexPage.new(site, site.source, dir, "index.html", site.data['parks'])
+            end
+        end
+    end
 end
