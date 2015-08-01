@@ -33,3 +33,4 @@ exclude:
     - TODO
     - cf-invalidate.json
     - pdf
+    - tools

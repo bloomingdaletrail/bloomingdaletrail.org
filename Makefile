@@ -11,11 +11,11 @@ serve server s:
 	bundle exec jekyll serve
 
 publish:
-	aws --profile fbt s3 sync --acl public-read --exclude \*.pdf jekyll-site/_site/ s3://www.bloomingdaletrail.org/
+	aws --profile fbt s3 sync --acl public-read --exclude \*.pdf _site/ s3://www.bloomingdaletrail.org/
 
-jekyll-site/js/closest_access_point.js: jekyll-site/js/src/closest_access_point.js
+js/closest_access_point.js: js/src/closest_access_point.js
 	babel $< > $@
 
-jekyll-site/img/fbt_vertical_map_v1.svg: assets/vertical_map.svg
+img/fbt_vertical_map_v1.svg: assets/vertical_map.svg
 	$(INKSCAPE) $(shell pwd)/$< --export-plain-svg=$(shell pwd)/$@ --export-text-to-path
 	svgo $@
