@@ -236,3 +236,43 @@ a[href^="https://"]:after {
     background: url(../img/606-col-bg.png) no-repeat;
     background-position: center center;
 }
+
+.blog-nav {
+    margin: 3em 0;
+    .prev-post {
+        padding: 10px 2px;
+        border-top: 1px solid #ddd;
+    }
+    .next-post {
+        padding: 10px;
+        border-top: 1px solid #ddd;
+    }
+}
+
+.blog-index {
+    margin: 3em 0;
+}
+
+.post-meta, .post-pubdate {
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: gray;
+    display: block;
+}
+
+.post {
+    .post-meta {
+        font-size: 10px;
+    }
+}
+
+.blog-posts {
+
+    li {
+        margin-bottom: 1em;
+        a {
+            font-size: larger;
+        }
+    }
+}
