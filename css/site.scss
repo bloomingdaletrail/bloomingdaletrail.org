@@ -126,6 +126,42 @@ a[href^="https://"]:after {
     margin-bottom: 3em;
 }
 
+.latest {
+  h2 {
+    font-style: italic;
+    text-align: center;
+  }
+  .post {
+    position: relative;
+    .date {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: smaller;
+      font-family: sans-serif;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 3px 5px;             
+    }
+    a {
+      padding: 2em 0 0 1em;
+      font-weight: bold;
+      width: 100%;
+      height: 240px;
+      color: black;
+      box-shadow: 1px 1px 1px white;
+      font-size: larger;
+      background-size: cover;
+      background-position: center center;
+      display: inline-block;
+    }
+  }
+}
+
+.bt-abcs {
+  background-image: url(../img/abc_fbt_display.jpg);
+}
+      
 .reframing-ruin-teaser {
     background-image: url(../img/JFisher1.jpg);
     background-size: cover;
@@ -177,6 +213,7 @@ a[href^="https://"]:after {
         margin: 2em 1em;
         background-color: rgba(0, 0, 0, 0.5);
         padding: 10px;
+        display: inline-block;
     }
 }
 
