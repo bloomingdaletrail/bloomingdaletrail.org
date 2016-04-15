@@ -1,0 +1,12 @@
+---
+layout: page
+title: The FBT Blog
+---
+<ul class="blog-posts list-unstyled">
+    {% for post in site.posts %}
+    <li>
+        <span class="post-pubdate">{{ post.date | date: "%B %-d, %Y" }}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor%}
+</ul>
