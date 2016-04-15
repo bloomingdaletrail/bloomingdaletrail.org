@@ -144,29 +144,29 @@ a[href^="https://"]:after {
       padding: 3px 5px;             
     }
     a {
-      padding: 2em 0 0 1em;
       font-weight: bold;
       width: 100%;
-      height: 240px;
-      color: black;
-      box-shadow: 1px 1px 1px white;
-      font-size: larger;
+      color: #eee;
+      box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px 0px black;
+      font-size: 24px;
       background-size: cover;
       background-position: center center;
       display: inline-block;
+      .text-box {
+                margin: 1.5em 0 0 0;
+                padding: 0.5em;
+                background-color: rgba(0, 0, 212, 0.5);
+                width: 100%;
+                display: inline-block;
+                &:hover {
+                    background-color: rgba(0, 0, 212, 0.6);
+                }
+      }
     }
   }
 }
 
-.bt-abcs {
-  background-image: url(../img/abc_fbt_display.jpg);
-}
-
-.bt-pac {
-  background-image: url(../img/ribbon-cutting-collage.jpg);
-  background-size: contain;
-}
-      
 .reframing-ruin-teaser {
     background-image: url(../img/JFisher1.jpg);
     background-size: cover;
@@ -317,4 +317,10 @@ a[href^="https://"]:after {
             font-size: larger;
         }
     }
+}
+
+.pac-meeting {
+    background: url(../img/bt-timelapse.gif);
+    background-size: cover;
+    height: 280px;
 }
